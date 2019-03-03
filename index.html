@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"> 
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title></title>
+	<link rel="shortcut icon" href="favicon.ico" />	
+	<link rel="stylesheet" href="./assets/vendor/font/fontawesome-all.min.css">
+	<link rel="stylesheet" media="screen" href="./assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<!-- Start of the header -->
+		<header>
+		</header>
+		<!-- end of header -->
+		<!-- Start of main -->
+		<main>
+			<!-- wrapper starts here  -->
+			<div class="wrapper">
+				<span id="topbtn" class="none">top</span>
+				<button id="wifi-scan" class="btnSubmit" title="scan"></button>
+				<ul class="wifiLists">
+					<li class="wifi__list">
+						<span id="counter" class="wificnt">sr No</span>
+						<span id="wifi-name" class="wifiname">ssid</span>
+						<span id="wifi-address" class="wifiAdd">Mac address</span>
+						<span id="wifi-channel" class="channel">channel</span>
+						<span id="wifi-security" class="wifisec">security</span>
+					</li>
+				</ul>
+				<ul id="wifi" class="wifiLists"></ul>
+				<figure id="image" class="none">
+					<img src="./assets/images/loading.gif" alt="loading image">
+				</figure>
+			</div>
+			<!-- wrapper ends here -->
+			<div class="modal" id="modwl">
+				<div class="modalcont">
+					<span id="close" class="closebtn">&times;</span>
+					<div class="data">
+						<span class="name" id="viewname">name</span>
+						<span class="security" id="viewsec">security</span>
+						<span class="quality" id="viewqa">quality</span>
+						<form action="#FIXME" method="GET">
+							<input type="text" placeholder="Enter Password" id="inputvalue" class="input">
+							<button id="connect" class="cnt-btn" title="submit">connect</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- End of main -->
+		<!-- start of footer -->
+		<footer>
+		</footer>
+		<!-- end of footer -->
+	</div>
+</body>
+<script src="./assets/js/script.js"></script>
+</html>
